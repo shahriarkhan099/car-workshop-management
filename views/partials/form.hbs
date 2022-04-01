@@ -1,0 +1,41 @@
+
+<h3>Enter Your Information To Set Appointment</h3>
+<table class="table">
+  <thead class="thread-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Car License Number</th>
+      <th scope="col">Car Engine Number</th>
+      <th scope="col"> Appointment Date  </th>
+      <th scope="col"> Select Mechanics </th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+      <tr>
+        <td> <input type="text" name="name" value="{{this.name}}" placeholder="Your Name"> </td>
+        <td> <input type="text" name="address" value="{{this.address}}" placeholder="Your Address"> </td>
+        <td> <input type="text" name="phone" value="{{this.phone}}" placeholder="Your Phone Number"> </td>
+        <td> <input type="text" name="license" value="{{this.license}}" placeholder="Car License Number"> </td>
+        <td> <input type="text" name="car_engine" value="{{this.car_engine}}" placeholder="Car Engine Number"> </td>
+        <td> <input type="date" id="setDate" value="{{this.appointment_date}}" name="appointment_date"> </td>
+        <td scope="col">
+          <select name="mechanics" id="mechanics" value="{{this.mechanics}}">
+            <option value="" disabled selected>Mechanics</option>
+            <option value="Khairul">Khairul Islam</option>
+            <option value="Nayem">Nayem Hossain</option>
+            <option value="Siam">Siam Ahmend</option>
+            <option value="Emon">Emon Khandakar</option>
+            <option value="Fahim">Fahim Chowdhury</option>
+          </select>
+        </td>
+        <td>
+          <button type="submit" name='submit' class="btn btn-outline-success btn-small"> Submit </button>
+        </td>
+      </tr>
+
+  </tbody>
+</table>

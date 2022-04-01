@@ -1,0 +1,13 @@
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+{{#each rows}}
+<form class="" action="/edit/{{this.id}}" method="POST" novalidate>
+   {{> form}}
+</form>
+{{/each}}
